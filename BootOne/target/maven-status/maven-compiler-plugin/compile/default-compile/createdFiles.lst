@@ -1,0 +1,7 @@
+com\bill\utils\VerifyUtil.class
+com\bill\service\LoginService.class
+com\bill\MyStratApplication.class
+com\bill\controller\LoginController.class
+com\bill\service\impl\LoginserviceImpl.class
+com\bill\mapper\LoginMapper.class
+com\bill\pojo\User.class

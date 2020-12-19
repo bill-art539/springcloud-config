@@ -1,0 +1,17 @@
+spring:
+  thymeleaf:
+    cache: false  #关闭缓存功能 实时刷新  方便开发
+    servlet:
+      content-type: text/html
+    enabled: true
+    encoding: UTF-8   #指定编码格式
+    mode: HTML
+    prefix: classpath:/templates/   #指定页面路径
+    suffix: .html     #设置后缀
+  datasource:
+    url: jdbc:mysql://localhost:3306/movie?characterEncoding=utf8&useSSL=false&serverTimezone=UTC #movie为你自己的数据库库名
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 8080    #端口

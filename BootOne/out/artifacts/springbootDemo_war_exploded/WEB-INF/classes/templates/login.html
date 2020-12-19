@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form  method="post"  action="/login">
+    <input type="text" name="username"><br>
+    <img id="img-verify" src="verifyCode" onclick="getVerify()">
+    <input type="submit" value="登录"><br>
+</form>
+</body>
+<script>
+    //获取验证码
+    function getVerify() {
+        document.getElementById("img-verify").src = "/verifyCode?" + Math.random();
+    }
+</script>
+</html>
+

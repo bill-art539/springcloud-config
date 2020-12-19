@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: bill
+Build-Jdk: 1.8.0_91
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: com.bill
+Main-Class: ${start-class}
+

@@ -1,0 +1,26 @@
+spring:
+  thymeleaf:
+    cache: false  #关闭缓存功能 实时刷新  方便开发
+    servlet:
+      content-type: text/html
+    enabled: true
+    encoding: UTF-8   #指定编码格式
+    mode: HTML5
+    prefix: classpath:/templates/   #指定页面路径
+    suffix: .html     #设置后缀
+  datasource:
+    url: jdbc:mysql://121.196.154.167/:3306/movie?characterEncoding=utf8&useSSL=false&serverTimezone=UTC #movie为你自己的数据库库名
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.bill.mapper
+server:
+  port: 89    #端口
+  #yml文件对大小写敏感，要注意区分大小写。
+  #** 使用缩进表示层级关系**一定要注意，我就是没注意这里，才掉坑两小时的！
+  #第一阶梯的元素要顶格，顶格，顶格！
+  #冒号后面跟空格。
+  #缩进空格数目不重要，但相同层级元素要左对齐。
+  #缩进时只能使用空格，不能使用Tab。
